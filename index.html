@@ -66,6 +66,19 @@
 
   <!-- Main Content -->
   <main class="content">
+    <!-- Hero Image Carousel -->
+    <div class="hero-carousel">
+      <div class="carousel-slide active">
+        <img src="MSU.jpg" alt="Michigan State University">
+        <div class="carousel-caption">Michigan State University</div>
+      </div>
+      <!-- Add more slides here -->
+      <!-- 
+      <div class="carousel-slide">
+        <img src="your-image.jpg" alt="Description">
+      </div> 
+      -->
+    </div>
 
     <section id="about" class="section">
       <div class="hero">
@@ -103,7 +116,7 @@
           <div class="timeline-date">2026</div>
           <div class="timeline-content">
             <span class="badge">Paper</span>
-            <p>Our work on vulnerabilities in lost/stolen phone reporting services is conditionally accepted to
+            <p>Our work on vulnerabilities in lost/stolen phone reporting services is accepted to
               <strong>ACM MobiSys 2026</strong>!
             </p>
           </div>
@@ -114,34 +127,62 @@
             <span class="badge">Award</span>
             <p>Received the <strong>ACM GetMobile Research Highlights</strong> for 2025.</p>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2024</div>
           <div class="timeline-content">
             <span class="badge">Award</span>
-            <p>Recognized by <strong>Google Bug Bounty</strong> for high-severity, high-quality mobile security
-              findings.</p>
+            <p>Received the <strong>MSU Graduate Fellowship</strong> for 2025.</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2024</div>
           <div class="timeline-content">
+            <span class="badge">Paper</span>
+            <p>Our work on problematic designs in cellular emergency services is accepted to <strong>ACM MobiCom 2024
+                (Winter run)</strong>!</p>
+          </div>
+          <div class="timeline-content">
+            <span class="badge">Paper</span>
+            <p>Our work on IMS security vulnerabilities is accepted to <strong>ACM MobiCom 2024 (Summer run)</strong>!
+            </p>
+          </div>
+          <div class="timeline-content">
+            <span class="badge">Award</span>
+            <p>Recognized by <strong>Google Bug Bounty</strong> for high-severity, high-quality mobile security
+              findings.</p>
+          </div>
+          <div class="timeline-content">
             <span class="badge">Award</span>
             <p>Received the <strong>ACM SIGMOBILE Research Highlights</strong> and nominated for Communications of ACM
               Research Highlights.</p>
+          </div>
+          <div class="timeline-content">
+            <span class="badge">Award</span>
+            <p>Received the <strong>MSU Graduate Fellowship</strong> for 2024.</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2023</div>
           <div class="timeline-content">
             <span class="badge">Impact</span>
-            <p>Contributed to 911 Coordinate Vulnerability Disclosure, leading to standard changes adopted by
+            <p>Contributed to <strong>911 CVD</strong> (Coordinate Vulnerability Disclosure), leading to standard
+              changes adopted by
               <strong>GSMA</strong>.
             </p>
+          </div>
+          <div class="timeline-content">
+            <span class="badge">Award</span>
+            <p>Received the <strong>ACM GetMobile Research Highlights</strong> for 2023.</p>
+          </div>
+          <div class="timeline-content">
+            <span class="badge">Award</span>
+            <p>Received the <strong>AT&T Security Award</strong>.</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <span class="badge">Paper</span>
+            <p>Our research on 911 emergency services security is accepted to <strong>ACM MobiCom 2022</strong>.</p>
+          </div>
           <div class="timeline-content">
             <span class="badge">Award</span>
             <p>Runner-Up for the <strong>Best Community Paper Award</strong> at ACM MobiCom 2022.</p>
@@ -159,8 +200,9 @@
           <h3 class="pub-title">Insecurity of Lost/Stolen Phone Reporting Services: Vulnerabilities, Attacks, and
             Countermeasures</h3>
           <p class="pub-authors"><strong>Min-Yue Chen</strong>, Y. Hu, Y.-A. Chen, C.-Y. Li, T. Xie, G.-H. Tu</p>
-          <p class="pub-venue">Accepted by ACM International Conference on Mobile Systems, Applications, and Services,
-            Cambridge, UK.</p>
+          <p class="pub-venue">Accepted by Proceedings of ACM the 24th ACM International Conference on Mobile Systems,
+            Applications, and Services (MobiSys) 2026, June 21 - 25, 2026, Cambridge, UK (Acceptance rate: 68/302 =
+            22.51%).</p>
           <div class="research-notes"
             style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-color);">
             <!-- <p class="duration"
@@ -186,7 +228,12 @@
           <h3 class="pub-title">Uncovering Insecure Designs of Cellular Emergency Services (911)</h3>
           <p class="pub-authors">Y. Hu*, <strong>Min-Yue Chen*</strong>, G.-H. Tu, C.-Y. Li, S. Wang, J. Shi, T. Xie, L.
             Xiao, C. Peng, Z. Tan, and S. Lu</p>
-          <p class="pub-venue">ACM International Conference On Mobile Computing And Networking, Sydney, Australia.</p>
+          <p
+            style="font-size: 0.8rem; color: var(--text-secondary); margin-top: -0.5rem; margin-bottom: 0.8rem; font-style: italic;">
+            (*): Co-primary author, denotes equal contribution</p>
+          <p class="pub-venue">Accepted by Proceedings of ACM the 28th Annual International Conference On Mobile
+            Computing And Networking (MobiCom) 2022, October 17- October 21, 2022, Sydney, Australia (Acceptance rate:
+            56/314 = 17.83%).</p>
           <div class="accolades">
             <a href="https://www.cse.msu.edu/~ghtu/911-award.png" target="_blank" class="accolade highlight"
               onclick="event.stopPropagation()">Best Community Paper Award - Runner Up</a>
@@ -221,7 +268,9 @@
           </h3>
           <p class="pub-authors">Y. Hu, <strong>Min-Yue Chen</strong>, H. Yan, C.-Y. Cheng, G.-H. Tu, C.-Y. Li, T. Xie,
             C. Peng, L. Xiao, and J. Tang</p>
-          <p class="pub-venue">ACM International Conference On Mobile Computing And Networking, Washington, D.C.</p>
+          <p class="pub-venue">Accepted by Proceedings of ACM the 30th Annual International Conference On Mobile
+            Computing And Networking (MobiCom) 2024, September 30- October 4, 2024, Washington, D.C., USA (Acceptance
+            rate: 55/288 = 19.09%, Winter run).</p>
           <div class="research-notes"
             style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-color);">
             <!-- <p class="duration"
@@ -244,7 +293,9 @@
           <h3 class="pub-title">IMS is Not That Secure on Your 5G/4G Phones</h3>
           <p class="pub-authors">J. Shi, S. Wang, <strong>Min-Yue Chen</strong>, G.-H. Tu, T. Xie, M.-H. Chen, Y. Hu,
             C.-Y. Li, and C. Peng</p>
-          <p class="pub-venue">ACM International Conference On Mobile Computing And Networking, Washington, D.C.</p>
+          <p class="pub-venue">Accepted by Proceedings of ACM the 30th Annual International Conference On Mobile
+            Computing And Networking (MobiCom) 2024, September 30- October 4, 2024, Washington, D.C., USA (Acceptance
+            rate: 48/207 = 23.19%, Summer run).</p>
           <div class="research-notes"
             style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-color);">
             <!-- <p class="duration"
@@ -353,7 +404,12 @@
           <h3 class="pub-title">Uncovering Insecure Designs of Cellular Emergency Services (911)</h3>
           <p class="pub-authors">Y. Hu*, <strong>Min-Yue Chen*</strong>, G.-H. Tu, C.-Y. Li, S. Wang, J. Shi, T. Xie, L.
             Xiao, C. Peng, Z. Tan, and S. Lu</p>
-          <p class="pub-venue">ACM International Conference On Mobile Computing And Networking, Sydney, Australia.</p>
+          <p
+            style="font-size: 0.8rem; color: var(--text-secondary); margin-top: -0.5rem; margin-bottom: 0.8rem; font-style: italic;">
+            (*): Co-primary author, denotes equal contribution</p>
+          <p class="pub-venue">Accepted by Proceedings of ACM the 28th Annual International Conference On Mobile
+            Computing And Networking (MobiCom) 2022, October 17- October 21, 2022, Sydney, Australia (Acceptance rate:
+            56/314 = 17.83%).</p>
           <div class="accolades">
             <a href="https://www.cse.msu.edu/~ghtu/911-award.png" target="_blank" class="accolade highlight"
               onclick="event.stopPropagation()">Best Community Paper Award - Runner Up</a>
@@ -445,7 +501,7 @@
           <div class="edu-item glass-card">
             <h3>Ph.D. in Computer Science and Engineering</h3>
             <p>Michigan State University</p>
-            <p class="date">Expected Jun. 2026 | GPA: 3.95/4.0</p>
+            <p class="date">Aug. 2021 - Expected Jun. 2026 | GPA: 3.95/4.0</p>
           </div>
           <div class="edu-item glass-card mt-4">
             <h3>B.S. in Computer Science</h3>
@@ -480,7 +536,7 @@
         <h3 style="font-size: 1.1rem; color: var(--accent-color); margin-bottom: 0.5rem; margin-top: 0;">Research
           Highlights</h3>
         <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
-          <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2025, '23</span>
+          <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2025, 2023</span>
             <strong>ACM GetMobile Research Highlights</strong>
           </li>
           <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2024</span> <strong>ACM
@@ -509,7 +565,7 @@
 
         <h3 style="font-size: 1.1rem; color: var(--accent-color); margin-bottom: 0.5rem;">Fellowships</h3>
         <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
-          <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2025, '24</span>
+          <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2025, 2024</span>
             <strong>MSU Graduate Fellowship</strong>
           </li>
         </ul>
@@ -522,7 +578,8 @@
       <div class="glass-card">
         <div class="references-grid">
           <div class="ref-card">
-            <h3>Guan-Hua Tu, Ph.D. <span class="badge" style="vertical-align: middle; margin-left: 8px; font-size: 0.65rem;">Advisor</span></h3>
+            <h3>Guan-Hua Tu, Ph.D. <span class="badge"
+                style="vertical-align: middle; margin-left: 8px; font-size: 0.65rem;">Advisor</span></h3>
             <h4>Associate Professor</h4>
             <p>Computer Science and Engineering Dept.</p>
             <p>Michigan State University</p>

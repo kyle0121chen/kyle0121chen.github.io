@@ -5,69 +5,80 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observerOptions = {
         root: null,
-        rootMargin: '-20% 0px -80% 0px',
+        rootMargin: '-10% 0px -70% 0px',
         threshold: 0
     };
 
+    const handleScrollAtBottom = () => {
+        const isAtBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50;
+        if (isAtBottom) {
+            const lastSection = sections[sections.length - 1];
+            if (lastSection) {
+                const id = lastSection.getAttribute('id');
+                updateActiveLink(id);
+            }
+        }
+    };
+
+    const updateActiveLink = (id) => {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (activeLink) {
+            activeLink.classList.add('active');
+            
+            // Logic to expand submenu
+            document.querySelectorAll('.sub-nav').forEach(nav => {
+                const parentNav = activeLink.closest('.sub-nav');
+                if (nav !== parentNav && nav !== activeLink.parentElement.querySelector('.sub-nav')) {
+                    nav.style.display = 'none';
+                }
+            });
+            
+            const parentSubNav = activeLink.closest('.sub-nav');
+            if (parentSubNav && parentSubNav.getAttribute('data-user-closed') !== 'true') {
+                parentSubNav.style.display = 'block';
+                const parentLi = parentSubNav.parentElement;
+                if (parentLi) {
+                    const parentLink = parentLi.querySelector('a');
+                    if (parentLink) parentLink.classList.add('active');
+                    const toggleBtn = parentLi.querySelector('.sub-nav-toggle');
+                    if (toggleBtn) toggleBtn.innerHTML = '&minus;';
+                }
+            }
+            
+            const siblingSubNav = activeLink.parentElement.querySelector('.sub-nav');
+            if (siblingSubNav && activeLink.parentElement.tagName.toLowerCase() === 'li') {
+                if (siblingSubNav.getAttribute('data-user-closed') !== 'true') {
+                    siblingSubNav.style.display = 'block';
+                    const toggleBtn = activeLink.parentElement.querySelector('.sub-nav-toggle');
+                    if (toggleBtn) toggleBtn.innerHTML = '&minus;';
+                }
+            }
+        }
+        
+        // Reset any non-active toggle buttons to plus
+        document.querySelectorAll('.sub-nav-toggle').forEach(toggle => {
+            const subNav = toggle.parentElement.querySelector('.sub-nav');
+            if (subNav && subNav.style.display === 'none') {
+                toggle.innerHTML = '&plus;';
+            }
+        });
+    };
+
     const observer = new IntersectionObserver((entries) => {
+        // If we are at the bottom, don't let intersection observer override the bottom logic
+        const isAtBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50;
+        if (isAtBottom) return;
+
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute('id');
-                // Update active class on nav links
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-                
-                const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                    
-                    // Logic to expand submenu: 
-                    // Remove expanded styling from all sub-navs first
-                    document.querySelectorAll('.sub-nav').forEach(nav => {
-                        nav.style.display = 'none';
-                        // Reset manual closed state if we navigate entirely away from this menu
-                        if (!activeLink.closest('.sub-nav') && nav !== activeLink.parentElement.querySelector('.sub-nav')) {
-                            nav.removeAttribute('data-user-closed');
-                        }
-                    });
-                    
-                    // If the active link is inside a sub-nav, show that sub-nav and highlight parent
-                    const parentSubNav = activeLink.closest('.sub-nav');
-                    if (parentSubNav) {
-                        if (parentSubNav.getAttribute('data-user-closed') !== 'true') {
-                            parentSubNav.style.display = 'block';
-                            const parentLi = parentSubNav.parentElement;
-                            if (parentLi) {
-                                const parentLink = parentLi.querySelector('a');
-                                if (parentLink) parentLink.classList.add('active');
-                                const toggleBtn = parentLi.querySelector('.sub-nav-toggle');
-                                if (toggleBtn) toggleBtn.innerHTML = '&minus;';
-                            }
-                        }
-                    }
-                    
-                    // If the active link is the parent itself
-                    const siblingSubNav = activeLink.parentElement.querySelector('.sub-nav');
-                    if (siblingSubNav && activeLink.parentElement.tagName.toLowerCase() === 'li') {
-                        if (siblingSubNav.getAttribute('data-user-closed') !== 'true') {
-                            siblingSubNav.style.display = 'block';
-                            const toggleBtn = activeLink.parentElement.querySelector('.sub-nav-toggle');
-                            if (toggleBtn) toggleBtn.innerHTML = '&minus;';
-                        }
-                    }
-                }
-                
-                // Reset any non-active toggle buttons to plus
-                document.querySelectorAll('.sub-nav-toggle').forEach(toggle => {
-                    const subNav = toggle.parentElement.querySelector('.sub-nav');
-                    if (subNav && subNav.style.display === 'none') {
-                        toggle.innerHTML = '&plus;';
-                    }
-                });
+                updateActiveLink(id);
             }
         });
     }, observerOptions);
+
+    window.addEventListener('scroll', handleScrollAtBottom);
 
     sections.forEach(section => {
         observer.observe(section);
@@ -130,4 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 5. Hero Carousel Logic
+    const slides = document.querySelectorAll('.carousel-slide');
+    if (slides.length > 1) {
+        let currentSlide = 0;
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 15000); // 15 seconds
+    }
 });
