@@ -143,13 +143,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Hero Carousel Logic
+    const carousel = document.querySelector('.hero-carousel');
     const slides = document.querySelectorAll('.carousel-slide');
-    if (slides.length > 1) {
+    const prevBtn = document.querySelector('.carousel-control.prev');
+    const nextBtn = document.querySelector('.carousel-control.next');
+    
+    if (slides.length > 0) {
         let currentSlide = 0;
-        setInterval(() => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }, 15000); // 15 seconds
+        let slideInterval;
+
+        const showSlide = (index) => {
+            slides.forEach(s => s.classList.remove('active'));
+            slides[index].classList.add('active');
+            currentSlide = index;
+        };
+
+        const nextSlide = () => {
+            let nextIndex = (currentSlide + 1) % slides.length;
+            showSlide(nextIndex);
+        };
+
+        const prevSlide = () => {
+            let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prevIndex);
+        };
+
+        const startTimer = () => {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 15000);
+        };
+
+        if (nextBtn && prevBtn) {
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                startTimer(); // Reset timer on manual click
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                startTimer(); // Reset timer on manual click
+            });
+        }
+
+        // Initialize timer
+        if (slides.length > 1) {
+            startTimer();
+        }
     }
 });

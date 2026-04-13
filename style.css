@@ -308,6 +308,44 @@ a:hover {
   z-index: 2;
 }
 
+/* Carousel Controls */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(42, 39, 35, 0.4);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  backdrop-filter: blur(5px);
+  border-radius: 2px;
+  opacity: 0; /* Hide by default */
+}
+
+.hero-carousel:hover .carousel-control {
+  opacity: 1; /* Show on hover */
+}
+
+.carousel-control:hover {
+  background: rgba(42, 39, 35, 0.8);
+}
+
+.carousel-control.prev {
+  left: 1rem;
+}
+
+.carousel-control.next {
+  right: 1rem;
+}
+
 /* Main Content Styles */
 .content {
   padding: 4rem 3% 60vh; /* Added 60vh bottom padding */
