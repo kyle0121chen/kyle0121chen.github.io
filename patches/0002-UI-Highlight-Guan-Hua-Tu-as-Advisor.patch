@@ -1,0 +1,25 @@
+From e1fc95dce73c46da0d29f6b343e3fc1bb860ad97 Mon Sep 17 00:00:00 2001
+From: Min-Yue Chen <kyle0121chen@gmail.com>
+Date: Sun, 12 Apr 2026 20:21:19 -0400
+Subject: [PATCH 2/5] UI: Highlight Guan-Hua Tu as Advisor
+
+---
+ web2/index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/web2/index.html b/web2/index.html
+index 31b9b63..171a18f 100644
+--- a/web2/index.html
++++ b/web2/index.html
+@@ -522,7 +522,7 @@
+       <div class="glass-card">
+         <div class="references-grid">
+           <div class="ref-card">
+-            <h3>Guan-Hua Tu, Ph.D.</h3>
++            <h3>Guan-Hua Tu, Ph.D. <span class="badge" style="vertical-align: middle; margin-left: 8px; font-size: 0.65rem;">Advisor</span></h3>
+             <h4>Associate Professor</h4>
+             <p>Computer Science and Engineering Dept.</p>
+             <p>Michigan State University</p>
+-- 
+2.46.0.windows.1
+
