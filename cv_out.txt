@@ -1,0 +1,239 @@
+Min-Yue Chen
+Michigan State University
+2153 Engineering Building
+East Lansing, MI 48824
+
+Phone: (517) 920-9648
+Email: chenmi33@msu.edu
+Google Scholar Profile: Link.
+
+Research Interests
+Mobile Networking (5G/4G and beyond), Network and System Security, Mobile/Edge Computing, Internet
+of Things.
+
+Education
+Michigan State University (MSU), East Lansing, MI
+Ph.D. Candidate, Department of Computer Science and Engineering
+National Chiao Tung University (NCTU), Hsinchu, Taiwan
+B.S., Computer Science
+
+August 2021 - Present
+September 2019
+
+Appointment
+Michigan State University, East Lansing, MI
+Graduate Research Assistant
+
+August 2021 - Present
+
+National Chiao Tung University, Hsinchu, Taiwan
+Research Assistant
+
+September 2019- May 2021
+
+Selected Honors and Awards
+•
+•
+•
+•
+•
+•
+
+ACM GetMobile Research Highlights
+Communications of ACM Research Highlights Nomination
+ACM SIGMOBILE Research Highlights
+ACM GetMobile Research Highlights
+AT&T Security Award
+ACM MobiCom’22 Best Community Paper Award Runner-Up
+
+2025
+2024
+2024
+2023
+2023
+2022
+
+Publications
+[MobiSys’26]
+
+Min-Yue Chen, Yiwen Hu, Yu-An Chen, Chi-Yu Li, Tian Xie, Guan-Hua Tu, ”Insecurity of
+Lost/Stolen Phone Reporting Services: Vulnerabilities, Attacks, and Countermeasures,” conditionally accepted by ACM International Conference on Mobile Systems, Applications, and Services
+(ACM MobiSys), June 21-25, 2026, Cambridge, UK. [Acceptance Rate: 68/302 = 22.51%]
+
+[GetMobile’25]
+
+Jingwen Shi, Sihan Wang, Min-Yue Chen, Guan-Hua Tu, Tian Xie, Man-Hsin Chen, Yiwen Hu,
+Chi-Yu Li, and Chunyi Peng, “IMS is Not That Secure on Your 5G/4G Phones,” ACM GetMobile
+Magazine: Mobile Computing and Communications (GetMobile), Volume: 29, Issue: 1, pp. 2024, April, 2025. Invited Article & Research Highlights
+
+[MobiCom’24]
+
+Yiwen Hu, Min-Yue Chen, Haitian Yan, Chuan-Yi Cheng, Guan-Hua Tu, Chi-Yu Li, Tian Xie,
+Chunyi Peng, Li Xiao, and Jiliang Tang, “Uncovering Problematic Designs Hindering Ubiquitous Cellular Emergency Services Access,” accepted by ACM International Conference On Mobile
+Computing And Networking (ACM MobiCom), September 30 - October 4, 2024, Washington,
+D.C., United States. [Acceptance Rate: 103/494 = 20.85%]
+
+[MobiCom’24]
+
+Jingwen Shi, Sihan Wang, Min-Yue Chen, Guan-Hua Tu, Tian Xie, Man-Hsin Chen, Yiwen Hu,
+Chi-Yu Li, and Chunyi Peng, “IMS is Not That Secure on Your 5G/4G Phones,” accepted by ACM
+International Conference On Mobile Computing And Networking (ACM MobiCom), September 30
+- October 4, 2024, Washington, D.C., United States. [Acceptance Rate: 103/494 = 20.85%]
+1
+
+[ToN’24]
+
+Min-Yue Chen, Yiwen Hu, Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie, Li Xiao,
+Chunyi Peng, Zhaowei Tan, and Songwu Lu, “Taming the Insecurity of Cellular Emergency Services (9-1-1): From Vulnerabilities to Secure Designs,” IEEE/ACM Transactions on Networking
+(ToN), Volume 32, Issue: 4, pp. 3076-3091, Aug. 2024. [Impact Factor: 3.79]
+
+[ToN’24]
+
+Sihan Wang, Tian Xie, Min-Yue Chen, Guan-Hua Tu, Chi-Yu Li, Xinyu Lei, Po-Yi Chou, Fucheng
+Hsieh, Yiwen Hu, Li Xiao, Chunyi Peng, “Dissecting Operational Cellular IoT Service Security:
+Attacks and Defenses,” IEEE/ACM Transactions on Networking (ToN), Volume: 32, Issue: 2, pp.
+1229-1244, April 2024. [Impact Factor: 3.79]
+
+[GetMobile’23]
+
+Yiwen Hu(∗) , Min-Yue Chen(∗) , Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie,
+Li Xiao, Chunyi Peng, Zhaowei Tan, and Songwu Lu, “Unveiling the Insecurity of Operational
+Cellular Emergency Services (911): Vulnerabilities, Attacks, and Countermeasures,” ACM GetMobile Magazine: Mobile Computing and Communications (GetMobile), Volume: 27, Issue: 1,
+pp. 39-43, March, 2023. Invited Article & Research Highlights
+(∗): Co-primary author, denotes equal contribution
+
+[MobiCom’22]
+
+Yiwen Hu(∗) , Min-Yue Chen(∗) , Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie,
+Li Xiao, Chunyi Peng, Zhaowei Tan, and Songwu Lu, “Uncovering Insecure Designs of Cellular
+Emergency Services (911),” ACM International Conference On Mobile Computing And Networking
+(ACM MobiCom), October 17–21, 2022, Sydney, Australia, pp 703–715. [Acceptance Rate:
+57/315 = 18.1%] [Media Coverage: MSU Today, Wilx TV, Wood TV, WILS Morning WakeUp, Homeland Security News, ISSSource, EurekAlert] Best Community Paper Award Runner Up, ACM SIGMOBILE Research Highlights, AT&T Security Award
+(∗): Co-primary author, denotes equal contribution
+
+Media Coverage
+• EurekAlert (2025). “MSU researchers identify why 911 calls are delayed, failed, or dropped”. March
+27.
+• MSU Today (2025). “MSU researchers identify why 911 calls are delayed, failed, or dropped”. March
+27.
+• ISSSource (2023). “Boosting Security For Cellular Emergency Calls”. May 1.
+• Homeland Security News Wire (2023). “Making Emergency Calls More Secure”. April 27.
+• Wood TV (2023). “MSU researchers get $1.2M to improve 911 call security”. April 27.
+• EurekAlert (2023). “MSU researchers to lead security improvements for cellular 911 calls with $1.2M
+NSF grant”. April 27.
+• Wilx TV (2023). “MSU researchers awarded $1.2 million grant to fix 911
+cyber security issues”. April 25.
+• MSU Today (2023). “Making emergency calls more secure”. April 24.
+
+Professional Services
+External Reviewer
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+IEEE International Conference on Computer Communications (INFOCOM)
+IEEE International Conference on Computer Communications (INFOCOM)
+IEEE Military Communications Conference (MILCOM)
+IEEE Communications Standards Magazine (COMSTD)
+IEEE International Conference on Computer Communications (INFOCOM)
+IEEE International Conference on Network Protocols (ICNP)
+IEEE International Conference on Computer Communications and Networks (ICCCN)
+IFIP Networking Conference (IFIP)
+IEEE Transactions on Dependable and Secure Computing (TDSC)
+IEEE Conference on Communications and Network Security (CNS)
+
+2025
+2024
+2024
+2024
+2023
+2023
+2023
+2023
+2023
+2022
+
+Teaching Experience
+CSE 410: Operating Systems
+
+2
+
+2022-2023
+
+Undergraduate Course, Department of Computer Science and Engineering, MSU
+Teaching Assistant
+CSE 425: Introduction to Computer Security
+Undergraduate Course, Department of Computer Science and Engineering, MSU
+Teaching Assistant
+
+(Spring) 2026
+
+CSE 825: Computer and Network Security
+Graduate Course, Department of Computer Science and Engineering, MSU
+Teaching Assistant
+
+(Fall) 2025
+
+Academic Mentoring
+Ph.D. Students (3)
+• Jared Singh
+• Yu-An Chen
+• Moyan Lyu
+
+Fall 2024 - Present
+Fall 2024 - Present
+Fall 2024 - Present
+
+Undergraduate Students(4)
+• Nishit Nagpal
+• Jared Singh
+Current position: Ph.D. student at Michigan State University (MSU)
+• Felipe Marques Allevato
+Current position: Security Analyst at Microsoft in Redmond, Washington
+• Lukas Richters
+Current position: Software Engineer at KLA in Ann Arbor, Michigan
+
+Fall 2025 - Present
+Spring 2024 - Fall 2024
+Fall 2022 - Spring 2025
+Fall 2021 - Spring 2022
+
+References
+Guan-Hua Tu, Ph.D.
+
+Songwu Lu, Ph.D.
+
+Associate Professor (Advisor)
+Computer Science and Engineering Department
+Michigan State University
+Email: ghtu@msu.edu
+
+IEEE and ACM Fellow
+Computer Science Department
+University of California, Los Angeles
+Email: slu@cs.ucla.edu
+
+Chi-Yu Li, Ph.D.
+
+Chunyi Peng, Ph.D.
+
+Professor
+Computer Science Department
+National Yang Ming Chiao Tung University
+Email: chiyuli@cs.nycu.edu.tw
+
+Associate Professor
+Department of Computer Science
+Purdue University
+Email: chunyi@purdue.edu
+
+3
+
+

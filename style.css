@@ -1,27 +1,35 @@
 :root {
   /* Le Labo Industrial / Minimalist Variables */
-  --bg-color: #f4f1ea;       /* Vintage label parchment */
-  --bg-secondary: #e8e4d9;   /* Slightly deeper paper shade */
-  --text-primary: #2a2723;   /* Typewriter off-black / ink */
-  --text-secondary: #6b635c; /* Faded stamp ink */
-  
+  --bg-color: #f4f1ea;
+  /* Vintage label parchment */
+  --bg-secondary: #e8e4d9;
+  /* Slightly deeper paper shade */
+  --text-primary: #2a2723;
+  /* Typewriter off-black / ink */
+  --text-secondary: #6b635c;
+  /* Faded stamp ink */
+
   /* Apothecary Glass Dark Tone for Sidebar */
-  --sidebar-grad-start: #232220; 
+  --sidebar-grad-start: #232220;
   --sidebar-grad-end: #1c1b19;
-  
+
   /* Accents */
-  --accent-color: #2a2723;   /* Matte black for strong contrast */
+  --accent-color: #2a2723;
+  /* Matte black for strong contrast */
   --accent-glow: rgba(42, 39, 35, 0.05);
 
-  --border-color: rgba(42, 39, 35, 0.15); /* Vintage separator lines */
-  --glass-bg: #efebe2;                    /* Matte paper label background, no glass */
-  
-  --sidebar-text: #e8e4db;   /* Off-white parchment text for sidebar */
+  --border-color: rgba(42, 39, 35, 0.15);
+  /* Vintage separator lines */
+  --glass-bg: #efebe2;
+  /* Matte paper label background, no glass */
+
+  --sidebar-text: #e8e4db;
+  /* Off-white parchment text for sidebar */
   --sidebar-text-muted: rgba(232, 228, 219, 0.6);
 
   --font-main: 'Inter', sans-serif;
-  
-  --sidebar-width: 320px;
+
+  --sidebar-width: 340px;
   --transition: all 0.3s ease;
 }
 
@@ -45,7 +53,10 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--text-primary);
   font-weight: 600;
   margin-bottom: 1rem;
@@ -70,7 +81,12 @@ a:hover {
   position: sticky;
   left: 0;
   top: 0;
-  background: linear-gradient(180deg, var(--sidebar-grad-start) 0%, var(--sidebar-grad-end) 100%);
+  overflow-y: auto;
+  /* Handles zoom or small screen overflow */
+  background-image: linear-gradient(180deg, rgba(35, 34, 32, 0.2) 0%, rgba(28, 27, 25, 0.7) 100%), url('portrait.jpg');
+  background-size: cover;
+  background-position: 43% 10%;
+  background-repeat: no-repeat;
   color: var(--sidebar-text);
   padding: 2.5rem 2rem;
   display: flex;
@@ -79,24 +95,46 @@ a:hover {
   z-index: 100;
 }
 
-.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4 {
+/* 隱藏/美化 Sidebar 的滾動條，維持質感 */
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--sidebar-text-muted);
+  border-radius: 4px;
+}
+
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4 {
   color: var(--sidebar-text);
 }
 
 .profile {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-top: 5vh;
+  /* 往上回彈 5%，讓文字對齊背景照片更加完美 */
+  margin-bottom: calc(2rem + 10vh);
+  /* 補回剛才被往上提的 5vh，確保下方的選單位置不動 */
 }
 
 .profile-pic {
   width: 140px;
   height: 140px;
-  border-radius: 50%; /* 圓形大頭貼 */
+  border-radius: 50%;
+  /* 圓形大頭貼 */
   object-fit: cover;
   border: 1px solid var(--sidebar-text-muted);
   margin-bottom: 1rem;
   transition: var(--transition);
-  filter: grayscale(20%) contrast(110%); /* Slight vintage photo feel */
+  filter: grayscale(20%) contrast(110%);
+  /* Slight vintage photo feel */
 }
 
 .profile-pic:hover {
@@ -135,15 +173,19 @@ a:hover {
   display: block;
   color: var(--sidebar-text-muted);
   padding: 0.6rem 1rem;
-  border-radius: 2px; /* squarer borders */
+  border-left: 3px solid transparent;
+  border-radius: 2px;
+  /* squarer borders */
   font-weight: 400;
   letter-spacing: 0.5px;
   transition: var(--transition);
+  box-sizing: border-box;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 暗色加深背景 */
   color: var(--sidebar-text);
   border-left: 3px solid var(--sidebar-text);
   text-shadow: none;
@@ -163,6 +205,7 @@ a:hover {
 .contact-info a {
   color: var(--sidebar-text-muted);
 }
+
 .contact-info a:hover {
   color: var(--sidebar-text);
   text-shadow: none;
@@ -196,13 +239,15 @@ a:hover {
   margin-top: 1rem;
   text-transform: uppercase;
   font-size: 0.75rem;
-  letter-spacing: 2px; /* Le Labo wide tracking */
+  letter-spacing: 2px;
+  /* Le Labo wide tracking */
 }
 
 .cv-button:hover {
   border-color: var(--sidebar-text);
   color: var(--sidebar-text) !important;
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 暗色加深背景 */
   text-shadow: none;
 }
 
@@ -226,9 +271,10 @@ a:hover {
   transform: translateY(0);
 }
 
-.section > h2 {
+.section>h2 {
   font-size: 1.8rem;
-  border-bottom: 1px solid var(--text-primary); /* Simple ink underline */
+  border-bottom: 1px solid var(--text-primary);
+  /* Simple ink underline */
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   display: inline-block;
@@ -240,9 +286,11 @@ a:hover {
 .glass-card {
   background: var(--glass-bg);
   border: 1px solid var(--border-color);
-  border-radius: 2px; /* Sharp industrial corners */
+  border-radius: 2px;
+  /* Sharp industrial corners */
   padding: 2rem;
-  box-shadow: none; /* Removed shadow for matte paper look */
+  box-shadow: none;
+  /* Removed shadow for matte paper look */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -302,7 +350,8 @@ a:hover {
 .timeline {
   position: relative;
   padding-left: 2rem;
-  border-left: 1px solid var(--border-color); /* Thinner vintage line */
+  border-left: 1px solid var(--border-color);
+  /* Thinner vintage line */
 }
 
 .timeline-item {
@@ -313,11 +362,13 @@ a:hover {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -2.3rem; /* Adjusted for 1px border */
+  left: -2.3rem;
+  /* Adjusted for 1px border */
   top: 0.2rem;
   width: 10px;
   height: 10px;
-  border-radius: 0; /* Square bullet points */
+  border-radius: 0;
+  /* Square bullet points */
   background-color: var(--text-primary);
 }
 
@@ -330,10 +381,12 @@ a:hover {
 
 .badge {
   display: inline-block;
-  background-color: #dbd5c9; /* Craft paper tone */
+  background-color: #dbd5c9;
+  /* Craft paper tone */
   color: var(--text-primary);
   padding: 0.2rem 0.6rem;
-  border-radius: 2px; /* Sharp corners */
+  border-radius: 2px;
+  /* Sharp corners */
   font-size: 0.7rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -380,8 +433,18 @@ a:hover {
 }
 
 .highlight-card {
-  border: 1px solid var(--text-primary); /* Bold ink box */
-  background: var(--bg-color); /* Clean parchment */
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--sidebar-grad-start);
+  background: rgba(42, 39, 35, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+  transition: var(--transition);
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-color: var(--text-primary);
 }
 
 .accolades {
@@ -396,8 +459,9 @@ a:hover {
   padding: 0.3rem 0.6rem;
   border-radius: 2px;
   background-color: transparent;
-  color: var(--text-primary); 
-  border: 1px dashed var(--text-secondary); /* Dashed stamp aesthetic */
+  color: var(--text-primary);
+  border: 1px dashed var(--text-secondary);
+  /* Dashed stamp aesthetic */
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -489,6 +553,116 @@ a:hover {
   color: var(--text-secondary);
 }
 
+/* Sub Navigation */
+.sub-nav {
+  display: none;
+  list-style: none;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px dashed var(--border-color);
+  margin-left: 1rem;
+}
+
+.sub-nav a {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--sidebar-text-muted);
+}
+
+/* Accordion (Details/Summary) */
+details.all-publications {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+details.all-publications summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-primary);
+  outline: none;
+  list-style: none; /* Hide default arrow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+details.all-publications summary::-webkit-details-marker {
+  display: none;
+}
+
+details.all-publications summary::after {
+  content: '+';
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+details.all-publications[open] summary::after {
+  content: '-';
+}
+
+details.all-publications .publication-card {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  background: transparent;
+}
+details.all-publications .publication-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* References Grid */
+.references-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .references-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ref-card {
+  margin-bottom: 1rem;
+}
+.ref-card h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+.ref-card h4 {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-primary);
+}
+.ref-card p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.ref-card a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.ref-card a:hover {
+  color: var(--text-primary);
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -511,7 +685,7 @@ footer {
   body {
     flex-direction: column;
   }
-  
+
   .sidebar {
     width: 100%;
     height: auto;
@@ -520,7 +694,7 @@ footer {
     border-bottom: 1px solid var(--border-color);
     padding: 1.5rem;
   }
-  
+
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -528,16 +702,16 @@ footer {
     gap: 0.5rem;
     margin: 1.5rem 0;
   }
-  
+
   .nav-links a {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
   }
-  
+
   .nav-links a:hover,
   .nav-links a.active {
     border-left: none;
     border-bottom: 2px solid var(--sidebar-text);
   }
-  
+
 }
