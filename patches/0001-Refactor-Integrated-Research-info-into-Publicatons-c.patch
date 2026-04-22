@@ -1963,7 +1963,7 @@ index 3c1235a..31b9b63 100644
 +          </svg>
          </a>
        </div>
-       <a href="cv.pdf" class="cv-button" target="_blank">Download CV</a>
+       <a href="cv-web" class="cv-button" target="_blank">Download CV</a>
 @@ -50,12 +71,16 @@
        <div class="hero">
          <h2 class="greeting">Hi, I'm Min-Yue Chen</h2>

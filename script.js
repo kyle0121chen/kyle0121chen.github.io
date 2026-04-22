@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const trackerEndpoint = window.VISITOR_TRACKER_URL || '/api/visits';
+
+    const trackVisit = async () => {
+        try {
+            await fetch(trackerEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    pageUrl: window.location.href,
+                    pagePath: window.location.pathname,
+                    pageTitle: document.title,
+                    referrer: document.referrer,
+                    language: navigator.language || '',
+                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || '',
+                    screen: {
+                        width: window.screen.width,
+                        height: window.screen.height
+                    }
+                }),
+                keepalive: true
+            });
+        } catch (error) {
+            console.debug('Visitor tracking unavailable.', error);
+        }
+    };
+
+    trackVisit();
     // 1. Scroll-spy for sidebar navigation
     const sections = document.querySelectorAll('.section, #selected-papers, #all-publications');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -191,3 +220,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
