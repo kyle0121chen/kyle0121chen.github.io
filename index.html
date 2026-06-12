@@ -124,6 +124,9 @@
         <div class="timeline-item">
           <div class="timeline-date">2026</div>
           <div class="timeline-content">
+            <span class="badge">Award</span>
+            <p>My MobiSys'26 paper is selected as a<strong>Feature Paper</strong>
+            </p>
             <span class="badge">Paper</span>
             <p>My work on vulnerabilities in lost/stolen phone reporting services is accepted to
               <strong>ACM MobiSys 2026</strong>
@@ -204,14 +207,20 @@
       <div id="selected-papers">
         <h2>Selected Publications</h2>
 
-        <div class="publication-card glass-card highlight-card">
+        <div class="publication-card glass-card highlight-card"
+          onclick="window.open('https://dl.acm.org/doi/10.1145/3745756.3809220', '_blank')" style="cursor: pointer;">
           <div class="pub-conference">ACM MobiSys 2026</div>
           <h3 class="pub-title">Insecurity of Lost/Stolen Phone Reporting Services: Vulnerabilities, Attacks, and
             Countermeasures</h3>
+
           <p class="pub-authors"><strong>Min-Yue Chen</strong>, Y. Hu, Y.-A. Chen, C.-Y. Li, T. Xie, G.-H. Tu</p>
           <p class="pub-venue">Accepted by Proceedings of ACM the 24th ACM International Conference on Mobile Systems,
             Applications, and Services (MobiSys) 2026, June 21 - 25, 2026, Cambridge, UK (Acceptance rate: 68/302 =
             22.51%).</p>
+          <div class="accolades">
+            <a href="https://www.sigmobile.org/mobisys/2026/program/#session-9-systems-and-security" target="_blank"
+              class="accolade highlight" onclick="event.stopPropagation()">Featured Paper</a>
+          </div>
           <div class="research-notes"
             style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-color);">
             <!-- <p class="duration"
@@ -335,13 +344,30 @@
       <details id="all-publications" class="all-publications">
         <summary>View All Publications</summary>
 
-        <div class="publication-card">
+        <div class="publication-card" onclick="window.open('https://dl.acm.org/doi/10.1145/3745756.3809220', '_blank')"
+          style="cursor: pointer;">
           <div class="pub-conference">ACM MobiSys 2026</div>
           <h3 class="pub-title">Insecurity of Lost/Stolen Phone Reporting Services: Vulnerabilities, Attacks, and
             Countermeasures</h3>
           <p class="pub-authors"><strong>Min-Yue Chen</strong>, Y. Hu, Y.-A. Chen, C.-Y. Li, T. Xie, G.-H. Tu</p>
           <p class="pub-venue">Accepted by ACM International Conference on Mobile Systems, Applications, and Services,
             Cambridge, UK.</p>
+          <div class="accolades">
+            <a href="https://www.sigmobile.org/mobisys/2026/program/#session-9-systems-and-security" target="_blank"
+              class="accolade highlight" onclick="event.stopPropagation()">Featured Paper</a>
+          </div>
+        </div>
+
+        <div class="publication-card" onclick="window.open('', '_blank')" style="cursor: pointer;">
+          <div class="pub-conference">IEEE/ACM ToN 2026</div>
+          <h3 class="pub-title">When Mobile Equipment Security Lags Behind Infrastructure: Vulnerabilities, Attacks,
+            and Countermeasures in IMS Services</h3>
+          <p class="pub-authors">J. Shi, <strong>Min-Yue Chen</strong>, S. Wang, G.-H. Tu, T. Xie, Y. Hu, M.-H Chen, H.
+            Yan, C.-Y. Li, C. Peng,</p>
+          <p class="pub-venue">Accepted by IEEE/ACM Transactions on Networking (ToN).</p>
+          <div class="accolades">
+            <span class="accolade highlight">Impact Factor: 5.02</span>
+          </div>
         </div>
 
         <div class="publication-card" onclick="window.open('https://dl.acm.org/doi/10.1145/3733892.3733899', '_blank')"
@@ -363,7 +389,9 @@
           </h3>
           <p class="pub-authors">Y. Hu, <strong>Min-Yue Chen</strong>, H. Yan, C.-Y. Cheng, G.-H. Tu, C.-Y. Li, T. Xie,
             C. Peng, L. Xiao, and J. Tang</p>
-          <p class="pub-venue">ACM International Conference On Mobile Computing And Networking, Washington, D.C.</p>
+          <p class="pub-venue">ACM the 30th Annual International Conference On Mobile Computing And Networking
+            (MobiCom) 2024, September 30 - October 4, 2024, Washington, D.C., USA (Acceptance rate: 55/288 = 19.09%,
+            Winter run).</p>
         </div>
 
         <div class="publication-card" onclick="window.open('https://dl.acm.org/doi/10.1145/3636534.3649377', '_blank')"
@@ -372,7 +400,9 @@
           <h3 class="pub-title">IMS is Not That Secure on Your 5G/4G Phones</h3>
           <p class="pub-authors">J. Shi, S. Wang, <strong>Min-Yue Chen</strong>, G.-H. Tu, T. Xie, M.-H. Chen, Y. Hu,
             C.-Y. Li, and C. Peng</p>
-          <p class="pub-venue">ACM International Conference On Mobile Computing And Networking, Washington, D.C.</p>
+          <p class="pub-venue">ACM the 30th Annual International Conference On Mobile Computing And Networking
+            (MobiCom) 2024, September 30 - October 4, 2024, Washington, D.C., USA (Acceptance rate: 48/207 = 23.19%,
+            Summer run).</p>
           <div class="accolades">
             <a href="" target="_blank" class="accolade highlight" onclick="event.stopPropagation()">Google Bug Bounty
               High-Severity</a>
@@ -388,7 +418,7 @@
             Xiao, C. Peng, Z. Tan, and S. Lu</p>
           <p class="pub-venue">IEEE/ACM Transactions on Networking (ToN), Volume 32, Issue: 4.</p>
           <div class="accolades">
-            <span class="accolade highlight">Impact Factor: 3.79</span>
+            <span class="accolade highlight">Impact Factor: 5.02</span>
           </div>
         </div>
 
@@ -400,7 +430,7 @@
             F. Hsieh, Y. Hu, L. Xiao, C. Peng</p>
           <p class="pub-venue">IEEE/ACM Transactions on Networking (ToN), Volume 32, Issue: 2.</p>
           <div class="accolades">
-            <span class="accolade highlight">Impact Factor: 3.79</span>
+            <span class="accolade highlight">Impact Factor: 5.02</span>
           </div>
         </div>
 
@@ -412,10 +442,24 @@
             Vulnerabilities, Attacks, and Countermeasures</h3>
           <p class="pub-authors">Y. Hu*, <strong>Min-Yue Chen*</strong>, G.-H. Tu, C.-Y. Li, S. Wang, J. Shi, T. Xie, L.
             Xiao, C. Peng, Z. Tan, and S. Lu</p>
+          <p
+            style="font-size: 0.8rem; color: var(--text-secondary); margin-top: -0.5rem; margin-bottom: 0.8rem; font-style: italic;">
+            (*): Co-primary author, denotes equal contribution</p>
           <p class="pub-venue">ACM GetMobile Magazine: Mobile Computing and Communications, Volume 27, Issue: 1.</p>
           <div class="accolades">
             <span class="accolade highlight">Invited Article & Research Highlights</span>
           </div>
+        </div>
+
+        <div class="publication-card" onclick="window.open('https://ieeexplore.ieee.org/document/10288900', '_blank')"
+          style="cursor: pointer;">
+          <div class="pub-conference">IEEE CNS 2023</div>
+          <h3 class="pub-title">When Good Turns Evil: Encrypted 5G/4G Voice Calls Can Leak Your Identities</h3>
+          <p class="pub-authors">J. Shi, T. Xie, G.-H. Tu, C. Peng, C.-Y. Li, A. Hou, S. Wang, Y. Hu, X. Lei,
+            <strong>Min-Yue Chen</strong>, L. Xiao, X. Liu
+          </p>
+          <p class="pub-venue">IEEE Conference on Communications and Network Security (CNS), October 2–5, 2023,
+            Orlando, FL, USA. (Acceptance rate: 32/112 = 28.5%)</p>
         </div>
 
         <div class="publication-card" onclick="window.open('https://dl.acm.org/doi/10.1145/3495243.3560534', '_blank')"
@@ -427,7 +471,7 @@
           <p
             style="font-size: 0.8rem; color: var(--text-secondary); margin-top: -0.5rem; margin-bottom: 0.8rem; font-style: italic;">
             (*): Co-primary author, denotes equal contribution</p>
-          <p class="pub-venue">Accepted by Proceedings of ACM the 28th Annual International Conference On Mobile
+          <p class="pub-venue">ACM the 28th Annual International Conference On Mobile
             Computing And Networking (MobiCom) 2022, October 17- October 21, 2022, Sydney, Australia (Acceptance rate:
             56/314 = 17.83%).</p>
           <div class="accolades">
@@ -521,7 +565,7 @@
           <div class="edu-item glass-card">
             <h3>Ph.D. in Computer Science and Engineering</h3>
             <p>Michigan State University</p>
-            <p class="date">Aug. 2021 - Expected Jun. 2026 | GPA: 3.95/4.0</p>
+            <p class="date">Aug. 2021 - Expected AUG. 2026 | GPA: 3.95/4.0</p>
           </div>
           <div class="edu-item glass-card mt-4">
             <h3>B.S. in Computer Science</h3>
@@ -556,6 +600,9 @@
         <h3 style="font-size: 1.1rem; color: var(--accent-color); margin-bottom: 0.5rem; margin-top: 0;">Research
           Highlights & Awards</h3>
         <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+          <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2026</span>
+            <strong>ACM MobiSys 2026 Featured Paper</strong>
+          </li>
           <li style="margin-bottom: 0.8rem;"><span class="badge" style="margin-right: 10px;">2025, 2023</span>
             <strong>ACM GetMobile Research Highlights</strong>
           </li>
